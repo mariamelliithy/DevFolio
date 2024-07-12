@@ -1,0 +1,566 @@
+body{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+}
+.mt-30{
+    margin-top: 20rem !important;
+}
+.mb-30{
+    margin-bottom: 50rem !important;
+}
+.me-6{
+    margin-right: 7rem !important;
+}
+.ms-6{
+    margin-left: 6.3rem !important;
+}
+.bg-opacity-85{
+    --bs-bg-opacity: 0.95;
+}
+.navbar-brand{
+    font-size: 1.8rem;
+}
+.hover-underline{
+    position: relative;
+}
+.hover-underline::before{
+    position: absolute;
+    content: "";
+    height: 0.08rem;
+    width:0;
+    top: 90%;
+    background-color: #fff; /* Underline color */
+    transition: width 0.3s ease;
+}
+.stable::before{
+    width: 61%;
+}
+.hover-underline:hover::before{
+    width: 61%;
+    left: 13%;
+}
+.sharp{
+    border-radius: 0;
+}
+.dropdown-item-hr:hover {
+    background-color: transparent !important; /* Remove background color on hover */
+}
+.dropdown-right {
+    position: absolute;
+    right: 0;
+}
+.hero{
+    height: 100vh;
+}
+.bg-image{
+    background-image: url(Images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+.fs-45{
+    font-size: 4.5rem
+}
+.fs-25{
+    font-size: 2.5rem
+}
+.fs-25::after{
+    content: "D|";
+    animation-name: Typing;
+    animation-duration: 14s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.fs-7{
+    font-size: 0.75rem;
+}
+.w-55 {
+    width: 55% !important;
+}
+.px-45{
+    padding-right: 3.3rem !important;
+    padding-left: 1.6rem !important;
+}
+
+.w-30 {
+    width: 30% !important;
+}
+.w-80 {
+    width: 80% !important;
+}
+.w-15 {
+    width: 15% !important;
+}
+.w-10 {
+    width: 12% !important;
+}
+.w-20 {
+    width: 20% !important;
+    bottom: -6%;
+}
+
+.bg-gradient-linear{
+    height: 0.7rem;
+}
+.gradient-85{
+    background-image: linear-gradient(90deg, #0078F0, #0078F0 85%, #CDE1F8 85%);
+}
+.gradient-75{
+    background-image: linear-gradient(90deg, #0078F0, #0078F0 75%, #CDE1F8 75%);
+}
+.gradient-50{
+    background-image: linear-gradient(90deg, #0078F0, #0078F0 50%, #CDE1F8 50%);
+}
+.gradient-90{
+    background-image: linear-gradient(90deg, #0078F0, #0078F0 90%, #CDE1F8 90%);
+}
+.title{
+    font-size: 2rem;
+    position: relative;
+}
+.title::before{
+    position: absolute;
+    content: "";
+    height: 0.2rem;
+    width:17%;
+    top: 118%;
+    background-color: #0078f0; /* Underline color */
+}
+.fs125{
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #4F4F4F;
+    line-height: 1.5;
+}
+.fs3rem{
+    font-size: 2.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #1e1e1e;
+}
+.underline{
+    position: relative;
+}
+.underline::before{
+    position: absolute;
+    content: '';
+    height: 0.3rem;
+    width:3.2%;
+    left: 49%;
+    bottom: -70%;
+    background-color: #007aff;
+}
+.p-6{
+    padding: 3.3rem !important;
+}
+.pe-6{
+    padding-right: 3.3rem !important;
+}
+
+.pt-7{
+    padding: 7rem !important;
+}
+.pt-8{
+    padding: 8rem !important;
+}
+.bg-gradient-circle{
+    background-image: radial-gradient( #fff, #fff 59%, #0078F0 59%);
+}
+.bg-gradient-circle:hover{
+    transition: 3s ease;
+    background-image: radial-gradient( #0078F0, #0078F0 59%, #CDE1F8 59%);
+}
+.work-bg{
+    background-image: url(Images/counters-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    height: 50vh;
+}
+.layover{
+    background-color: rgba(0, 120, 255, 0.7);
+}
+.bg-gradient-circle-transparent{
+    background-image: radial-gradient( transparent, transparent 55%, #fff 55%);
+}
+.count::after {
+    content: attr(data-value);
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes count {
+    to { content: attr(data-value); }
+}
+.count-450::after {
+    animation-name: count-450;
+}
+.count-25::after {
+    animation-name: count-25;
+}
+.count-550::after {
+    animation-name: count-550;
+}
+.count-48::after {
+    animation-name: count-48;
+}
+.text-color{
+    color: #0078ff;;
+}
+.img-scale img{
+    transition: 1s;
+}
+.hover-img-scale:hover img{
+    transform: scale(1.2);
+}
+.slideshow-bg{
+    background-image: url(Images/overlay-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    height: 40vh;
+}
+.fw{
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 1rem 0;
+    display: block;
+}
+.fp{
+    padding: 0 13rem;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+.card-icon-bottom{
+    background-color: #0078ff;
+    bottom: -4%;
+}
+.underline-start{
+    position: relative;
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+.underline-start::before{
+    position: absolute;
+    content: "";
+    height: 0.23rem;
+    width:20%;
+    top: 130%;
+    background-color: #0078F0; /* Underline color */
+}
+.bg-color{
+    background-color: #fff;
+}
+.color{
+    border: 1px solid #dee2e6;
+}
+.footr{
+    background-color: #0078ff;
+}
+.layoverh{
+    height: 100vh;
+}
+li{
+    color: #0078ff;
+}
+.paragraph{
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #716f6f;
+    line-height: 1.5;
+}
+.social{
+    border-radius: 50%;
+    line-height: 1.6;
+    margin: 0 15px 0 0;
+    box-shadow: 0 0 0 3px #0078ff;
+    padding: 0.6rem;
+}
+@keyframes count-450 {
+    10% { content: "30"; }
+    20% { content: "60"; }
+    30% { content: "90"; }
+    40% { content: "120"; }
+    50% { content: "150"; }
+    55% { content: "180"; }
+    60% { content: "210"; }
+    65% { content: "240"; }
+    70% { content: "270"; }
+    75% { content: "300"; }
+    80% { content: "330"; }
+    85% { content: "360"; }
+    90% { content: "390"; }
+    95% { content: "420"; }
+    100% { content: "450"; } 
+}
+@keyframes count-25 {
+    20% { content: "5"; }
+    40% { content: "10"; }
+    60% { content: "15"; }
+    80% { content: "20"; }
+    100% { content: "25"; }
+}
+@keyframes count-550 {
+    10% {content: "50";}
+    20% { content: "100"; }
+    30% { content: "200"; }
+    40% { content: "250"; }
+    50% { content: "300"; }
+    60% { content: "350"; }
+    70% { content: "400"; }
+    80% { content: "450"; }
+    90% { content: "500"; }
+    100% { content: "550"; }
+}
+@keyframes count-48 {
+    20% {content: "16";}
+    40% { content: "24"; }
+    60% { content: "32"; }
+    80% { content: "40"; }
+    100% { content: "48"; }
+}
+
+/* Designer Developer Freelancer Photographer */
+@keyframes Typing {
+    1%{content: "De|";}
+    1.5%{content: "Des|";}
+    2%{content: "Desi|";}
+    2.5%{content: "Desig|";}
+    3%{content: "Design|";}
+    3.5%{content: "Designe|";}
+    4%{content: "Designer|";}
+
+    4.5%{content: "Designer";}
+    5.5%{content: "Designer";}
+    6.5%{content: "Designer";}
+
+    7.5%{content: "Designer|";}
+    8.5%{content: "Designer|";}
+    9.5%{content: "Designer|";}
+
+    10.5%{content: "Designer";}
+    11.5%{content: "Designer";}
+    12.5%{content: "Designer";}
+
+    13.5%{content: "Designer|";}
+    14.5%{content: "Designer|";}
+    15.5%{content: "Designer|";}
+
+    16.5%{content: "Designer";}
+    17.5%{content: "Designer";}
+    18.5%{content: "Designer";}
+
+    19.5%{content: "Designer|";}
+    20.5%{content: "Designer|";}
+    21.5%{content: "Designer|";}
+
+    22.5%{content: "Designe|";}
+    23%{content: "Design|";}
+    23.5%{content: "Desig|";}
+    24%{content: "Desi|";}
+    24.5%{content: "Des|";}
+    25%{content: "De|";}
+
+    25.5%{content: "Dev|";}
+    26%{content: "Deve|";}
+    26.5%{content: "Devel|";}
+    27%{content: "Develo|";}
+    27.5%{content: "Develop|";}
+    28%{content: "Develope|";}
+    28.5%{content: "Developer|";}
+
+    29%{content: "Developer";}
+    30%{content: "Developer";}
+    31%{content: "Developer";}
+
+    32%{content: "Developer|";}
+    33%{content: "Developer|";}
+    34%{content: "Developer|";}
+
+    35%{content: "Developer";}
+    36%{content: "Developer";}
+    37%{content: "Developer";}
+
+    38%{content: "Developer|";}
+    39%{content: "Developer|";}
+    40%{content: "Developer|";}
+
+    41%{content: "Developer";}
+    42%{content: "Developer";}
+    43%{content: "Developer";}
+
+    44%{content: "Developer|";}
+    45%{content: "Developer|";}
+    46%{content: "Developer|";}
+
+    47%{content: "Develope|";}
+    47.5%{content: "Develop|";}
+    48%{content: "Develo|";}
+    48.5%{content: "Devel|";}
+    49%{content: "Deve|";}
+    49.5%{content: "Dev|";}
+    50%{content: "De|";}
+    50.5%{content: "D|";}
+    51%{content: "|";}
+
+    51.5%{content: "F|";}
+    52%{content: "Fr|";}
+    52.5%{content: "Fre|";}
+    53%{content: "Free|";}
+    53.5%{content: "Freel|";}
+    54%{content: "Freela|";}
+    54.5%{content: "Freelan|";}
+    55%{content: "Freelanc|";}
+    55.5%{content: "Freelance|";}
+    56%{content: "Freelancer|";}
+
+    56.5%{content: "Freelancer";}
+    57.5%{content: "Freelancer";}
+    58.5%{content: "Freelancer";}
+
+    59.5%{content: "Freelancer|";}
+    60.5%{content: "Freelancer|";}
+    61.5%{content: "Freelancer|";}
+
+    62.5%{content: "Freelancer";}
+    63.5%{content: "Freelancer";}
+    64.5%{content: "Freelancer";}
+
+    65.5%{content: "Freelancer|";}
+    66.5%{content: "Freelancer|";}
+    67.5%{content: "Freelancer|";}
+
+    68.5%{content: "Freelancer";}
+    69.5%{content: "Freelancer";}
+    70.5%{content: "Freelancer";}
+
+    71.5%{content: "Freelancer|";}
+    72.5%{content: "Freelancer|";}
+    73.5%{content: "Freelancer|";}
+
+    74.5%{content: "Freelance|";}
+    75%{content: "Freelanc|";}
+    75.5%{content: "Freelan|";}
+    76%{content: "Freela|";}
+    76.5%{content: "Freel|";}
+    77%{content: "Free|";}
+    77.5%{content: "Fre|";}
+    78%{content: "Fr|";}
+    78.5%{content: "F|";}
+    79%{content: "|";}
+
+    79.5%{content: "P|";}
+    80%{content: "Ph|";}
+    80.5%{content: "Pho|";}
+    81%{content: "Phot|";}
+    81.5%{content: "Photo|";}
+    82%{content: "Photog|";}
+    82.5%{content: "Photogr|";}
+    83%{content: "Photogra|";}
+    83.5%{content: "Photograp|";}
+    84%{content: "Photograph|";}
+    84.5%{content: "Photographe|";}
+    85%{content: "Photographer|";}
+
+    85.5%{content: "Photographer";}
+    86.5%{content: "Photographer";}
+    87.5%{content: "Photographer";}
+
+    88.5%{content: "Photographer|";}
+    89.5%{content: "Photographer|";}
+    90.5%{content: "Photographer|";}
+    
+    91.5%{content: "Photographer";}
+    92.5%{content: "Photographer";}
+
+    93.5%{content: "Photographer|";}
+
+    94%{content: "Photographe|";}
+    94.5%{content: "Photograph|";}
+    95%{content: "Photograp|";}
+    95.5%{content: "Photogra|";}
+    96%{content: "Photogr|";}
+    96.5%{content: "Photog|";}
+    97%{content: "Photo|";}
+    97.5%{content: "Phot|";}
+    98%{content: "Pho|";}
+    98.5%{content: "Ph|";}
+    99%{content: "P|";}
+    99.5%{content: "|";}
+    100%{content: "D";}
+}
+@media (max-width: 768px) {
+    .mb-sm-5 {
+        margin-bottom: 20rem !important;
+    }
+    .mt-sm-20 {
+        margin-top: 30rem !important; /* Adjust as needed */
+    }
+    .mt-sm-45 {
+        margin-top: 45rem !important; /* Adjust as needed */
+    }
+    .mt-sm-100 {
+        margin-top: 100rem !important; /* Adjust as needed */
+    }
+    .mt-sm-10 {
+        margin-top: 10rem !important; /* Adjust as needed */
+    }
+    .mb-sm-30 {
+        margin-bottom: 30rem !important; /* Adjust as needed */
+    }
+    .hv-sm-100{
+        height: 120vh;
+    }
+}
+@media (min-width: 768px) {
+    .mb-md-5 {
+        margin-bottom: 20rem !important;
+    }
+    .mt-md-20 {
+        margin-top: 30rem !important; /* Adjust as needed */
+    }
+    .mt-md-50 {
+        margin-top: 50rem !important; /* Adjust as needed */
+    }
+    .mt-md-70 {
+        margin-top: 70rem !important; /* Adjust as needed */
+    }
+    .mb-md-30 {
+        margin-bottom: 30rem !important; /* Adjust as needed */
+    }
+    .hv-md-100{
+        height: 80vh;
+    }
+}
+
+@media (min-width: 992px) {
+    .mb-lg-5 {
+        margin-bottom: 20rem !important;
+    }
+    .mt-lg-20 {
+        margin-top: 20rem !important; /* Adjust as needed */
+    }
+    .mt-lg-30 {
+        margin-top: 50rem !important; /* Adjust as needed */
+    }
+    .hv-lg-50{
+        height: 75vh;
+    }
+}
+
+@media (min-width: 1200px) {
+    .mb-xl-5 {
+        margin-bottom: 3rem !important;
+    }
+    .mt-xl-20 {
+        margin-top: 20rem !important; /* Adjust as needed */
+    }
+}
